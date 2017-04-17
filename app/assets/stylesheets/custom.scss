@@ -2,7 +2,6 @@
 
 $light-gray: #777;
 
-
 section {
   overflow: auto;
 }
@@ -49,6 +48,10 @@ p {
 
 /* header */
 
+#navcontainer {
+  padding: 0px;
+}
+
 #logo {
   float: left;
   margin-right: 10px;
@@ -59,9 +62,9 @@ p {
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-  color: #fff;
-  text-decoration: none;
-}
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 /* footer */
@@ -76,21 +79,21 @@ footer {
   	&:hover{
   		color: #222;
   	}
-}
+  }
 
-small {
-float: left;
-}
+  small {
+    float: left;
+  }
 
-ul {
-float: right;
-list-style: none;
-}
+  ul {
+    float: right;
+    list-style: none;
+  }
 
-ul li {
-float: left;
-margin-left: 15px;
-}
+  ul li {
+    float: left;
+    margin-left: 15px;
+  }
 
 }
 
