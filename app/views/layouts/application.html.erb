@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= full_title(yield(:title)) %></title>
-  <%= render 'layouts/head' %>
-  <%= render 'layouts/shim' %>
+	<title><%= full_title(yield(:title)) %></title>
+	<%= render 'layouts/head' %>
+	<%= render 'layouts/shim' %>
 </head>
 <body>
 
-    <%= render 'layouts/header' %>	
-    <div class="container">
-
-    <%= yield %>
-    <%= render 'layouts/footer' %>
-  </div>
+	<%= render 'layouts/header' %>	
+	<div class="container">
+		<%= render 'shared/flash_messages' %>
+		<%= yield %>
+		<%= render 'layouts/footer' %>
+		<%= debug(params) if Rails.env.development? %>
+	</div>
 
 </body>
 </html>
